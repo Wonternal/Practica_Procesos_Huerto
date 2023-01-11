@@ -22,6 +22,7 @@ public class Productor extends Thread {
 
     public Productor(Huerto huerto ) {
         this.huerto = huerto;
+        this.setPriority(10);
     }
 
     private Vegetal plantarVegetal() {
