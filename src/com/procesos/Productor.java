@@ -27,7 +27,7 @@ public class Productor extends Thread {
     private Vegetal plantarVegetal() {
         String nombreVegetal = semillas[(int) (Math.random() * semillas.length)];
         try {
-            Thread.sleep((int) (Math.random() * 3000));
+            Thread.sleep((int) (Math.random() * 1000));
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

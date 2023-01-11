@@ -30,7 +30,13 @@ public class Huerto {
         }
 
         if (tienda.size() > 0) {
-            System.out.println("Consumidor -> " + tienda.remove(0));
+            try {
+                Thread.sleep((int) (Math.random() * 3000));
+                System.out.println("Consumidor -> " + tienda.remove(0));
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
         }
     }
 }
