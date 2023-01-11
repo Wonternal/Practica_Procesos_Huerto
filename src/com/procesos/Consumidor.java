@@ -1,5 +1,7 @@
 package com.procesos;
 
+import java.util.TreeMap;
+
 public class Consumidor extends Thread {
     Huerto huerto;
 
